@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <!--connect-src ws://192.168.1.238:8080 wss://192.168.43.8:8080-->
+         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: ws: ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+         <meta name="format-detection" content="telephone=no">
+         <meta name="msapplication-tap-highlight" content="no">
+         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+         <!--link rel="stylesheet" type="text/css" href="css/index.css"-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+
+        <title>Hello My Smart Home</title>
+        <p></p>
+        <div class="header">
+            <div><p></p></div>
+            <div><p></p></div>
+            <div>
+                <h3>Hola: <span id="email"></span></h3>
+            </div>
+
+        </div>
+
+
+
+
+    </head>
+    <body>
+        <div class="app">
+            <h3>Equipo: <span id="nombre"></span></h3>
+            <p></p>
+            <h4>Mensajes: <span id="msg">...</span> </h4>
+            <hr>
+            <h1> <span id="pot">...</span> </h1>
+            <p style="color:#E4E4E4; font-size: xx-small;" id="delta">...</p>
+
+            <button style="width: 70px; height: 50px; background-color: aquamarine; font-size: 35px;" id="on">On</button>
+            <button style="width: 70px; height: 50px; background-color:rgb(200, 10, 10); font-size: 35px;" id="off">Off</button>
+            <button style="width: 70px; height: 50px; background-color:rgb(250, 250, 0); font-size: 30px;" id="get">GET</button>
+            <!--button style="width: 60px; height: 50px; background-color:rgb(37, 0, 250); font-size: 30px;" id="weso">WS</button-->
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/websocket.js"></script>
+    </body>
+</html>
+
+__________________________________________________________________________________________________
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: ws: ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+    </head>
+
+    <header class="w3-container">
+        <div class="w3-cell">
+            <img src="../www/img/head.png" width="350" height="70">
+        </div>
+    </header>
+    <body>
+        <div class="w3-center">
+            <img class="w3-circle" src="../www/img/mascota-02-pequeno.png" alt="avatar" style="width:30%;max-width:150px">
+        </div>
+        <div class="w3-cell-row">
+            <div class="w3-cell w3-container">
+                <h3>Hola <span id="email"></span>!</h3>
+            </div>
+            <h3>Equipo: <span id="nombre"></span></h3>
+            <p></p>
+            <h4>Mensajes: <span id="msg">...</span> </h4>
+            <hr>
+            <h1> <span id="pot">...</span> </h1>
+            <p style="color:#E4E4E4; font-size: xx-small;" id="delta">...</p>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="js/websocket.js"></script>
+    </body>
+
+    <footer class="w3-container">
+        <h3>Footer</h3>
+    </footer>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <!--connect-src ws://192.168.1.238:8080 wss://192.168.43.8:8080-->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: ws: ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <div class="header">
+    </div>
+</head>
+<body>
+<div class="app">
+    <h2>¡Hola, <span id="nombreUsuario"></span>!</h2>
+    <p> <h1> </h1> </p>
+    <hr>
+    <p> <h1> </h1> </p>
+    <div>
+        <img src="../www/img/arduino.png" width="150" height="150">
+    </div>
+    <p> <h1> </h1> </p>
+    <h3>Equipo: <span id="nombreEquipo"></span></h3>
+    <p> <h1> </h1> </p>
+    <div id="off" style="display:none"><h2>OFF</h2></div>
+    <div id="on" style="display:block;"><h2>ON</h2></div>
+    <p> <h1> </h1> </p>
+    <div style="border-style: solid; border-color: green">
+        <h2>Accion:<span id="accion"></span> </h2>
+        <h3>Hora Inicio:<span id="horaInicio"></span> </h3>
+        <h3>Hora Fin:<span id="horaFin"></span> </h3>
+    </div><p> <h1> </h1> </p>
+    <div class="row">
+        <div id="quitado" class="column" style="display:none; background-color:#ccc;">
+            <h3>Quitado desde</h3>
+            <h3><span id="hora"></span></h3>
+        </div>
+        <div id="enchufado" class="column" style="display:block;">
+            <h3>Enchufado desde</h3>
+            <h3><span id="horaE"></span></h3>
+        </div>
+        <div class="column2">
+        </div>
+        <div id="enchufado2" class="column" style="display:block; border-style: solid; border-color: green">
+            <h2>Consumindo</h2>
+            <h1><span id="pot">W </span></h1>
+        </div>
+        <div id="quitado2" class="column" style="display:none; background-color:#ccc;">
+            <h2>Consumindo</h2>
+            <h2>Equipo OFF</h2>
+        </div>
+    </div>
+    <h4>Mensajes: <span id="msg">...</span> </h4>
+    <hr>
+    <p> <h1> </h1> </p>
+
+    <p style="color:#E4E4E4; font-size: xx-small;" id="delta">...</p>
+
+    <!--button style="width: 70px; height: 50px; background-color: aquamarine; font-size: 35px;" id="on">On</button>
+    <button style="width: 70px; height: 50px; background-color:rgb(200, 10, 10); font-size: 35px;" id="off">Off</button>
+    <button style="width: 70px; height: 50px; background-color:rgb(250, 250, 0); font-size: 30px;" id="get">GET</button>
+    <button style="width: 60px; height: 50px; background-color:rgb(37, 0, 250); font-size: 30px;" id="weso">WS</button-->
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+<!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script-->
+<script type="text/javascript" src="js/index.js"></script>
+<script src="js/websocket.js"></script>
+</body>
+</html>
